@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+   
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        
+        .calendar-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .month {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 15px;
+            break-inside: avoid;
+        }
+        
+        .month-name {
+            text-align: center;
+            background-color: #087415;
+            color: white;
+            padding: 10px;
+            margin: -15px -15px 15px -15px;
+            border-radius: 8px 8px 0 0;
+            font-size: 1.2em;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th {
+            background-color: #f0835f;
+            padding: 5px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        
+        td {
+            padding: 5px;
+            text-align: center;
+            border: 1px solid #3f3939;
+            height: 30px;
+        }
+        
+        .weekend {
+            background-color: #b0a6a6;
+            color: #404242;
+        }
+        
+        .other-month {
+            color: #826969;
+        }
+        
+        .today {
+            background-color: #48f3dc;
+            color: rgb(19, 3, 3);
+            font-weight: bold;
+            border-radius: 3px;
+        }
+        
+        @media (max-width: 768px) {
+            .calendar-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Made by Awais</h1>
+    <h1>Calendar 2025</h1>
+    
+    <div class="calendar-container">
+        <!-- January 2025 -->
+        <div class="month">
+            <div class="month-name">January 2025</div>
+            <table>
+                <tr>
+                    <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+                </tr>
+                <tr>
+                    <td class="weekend other-month">29</td>
+                    <td class="other-month">30</td>
+                    <td class="other-month">31</td>
+                    <td>1</td><td>2</td><td>3</td>
+                    <td class="weekend">4</td>
+                </tr>
+                <tr>
+                    <td class="weekend">5</td>
+                    <td>6</td><td>7</td><td>8</td><td>9</td><td>10</td>
+                    <td class="weekend">11</td>
+                </tr>
+                <tr>
+                    <td class="weekend">12</td>
+                    <td>13</td><td>14</td><td>15</td><td>16</td><td>17</td>
+                    <td class="weekend">18</td>
+                </tr>
+                <tr>
+                    <td class="weekend">19</td>
+                    <td>20</td><td>21</td><td>22</td><td>23</td><td>24</td>
+                    <td class="weekend">25</td>
+                </tr>
+                <tr>
+                    <td class="weekend">26</td>
+                    <td>27</td><td>28</td><td>29</td><td>30</td><td>31</td>
+                    <td class="weekend other-month">1</td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- February 2025 -->
+        <div class="month">
+            <div class="month-name">February 2025</div>
+            <table>
+                <tr>
+                    <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+                </tr>
+                <tr>
+                    <td class="weekend other-month">26</td>
+                    <td class="other-month">27</td>
+                    <td class="other-month">28</td>
+                    <td class="other-month">29</td>
+                    <td class="other-month">30</td>
+                    <td class="other-month">31</td>
+                    <td class="weekend">1</td>
+                </tr>
+                <tr>
+                    <td class="weekend">2</td>
+                    <td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+                    <td class="weekend">8</td>
+                </tr>
+                <tr>
+                    <td class="weekend">9</td>
+                    <td>10</td><td>11</td><td>12</td><td>13</td><td>14</td>
+                    <td class="weekend">15</td>
+                </tr>
+                <tr>
+                    <td class="weekend">16</td>
+                    <td>17</td><td>18</td><td>19</td><td>20</td><td>21</td>
+                    <td class="weekend">22</td>
+                </tr>
+                <tr>
+                    <td class="weekend">23</td>
+                    <td>24</td><td>25</td><td>26</td><td>27</td><td>28</td>
+                    <td class="weekend">1</td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- March 2025 -->
+        <div class="month">
+            <div class="month-name">March 2025</div>
+            <table>
+                <tr>
+                    <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+                </tr>
+                <tr>
+                    <td class="weekend other-month">23</td>
+                    <td class="other-month">24</td>
+                    <td class="other-month">25</td>
+                    <td class="other-month">26</td>
+                    <td class="other-month">27</td>
+                    <td class="other-month">28</td>
+                    <td class="weekend">1</td>
+                </tr>
+                <tr>
+                    <td class="weekend">2</td>
+                    <td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+                    <td class="weekend">8</td>
+                </tr>
+                <tr>
+                    <td class="weekend">9</td>
+                    <td>10</td><td>11</td><td>12</td><td>13</td><td>14</td>
+                    <td class="weekend">15</td>
+                </tr>
+                <tr>
+                    <td class="weekend">16</td>
+                    <td>17</td><td>18</td><td>19</td><td>20</td><td>21</td>
+                    <td class="weekend">22</td>
+                </tr>
+                <tr>
+                    <td class="weekend">23</td>
+                    <td>24</td><td>25</td><td>26</td><td>27</td><td>28</td>
+                    <td class="weekend">29</td>
+                </tr>
+                <tr>
+                    <td class="weekend">30</td>
+                    <td>31</td>
+                    <td class="other-month">1</td>
+                    <td class="other-month">2</td>
+                    <td class="other-month">3</td>
+                    <td class="other-month">4</td>
+                    <td class="weekend other-month">5</td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- April 2025 -->
+        <div class="month">
+            <div class="month-name">April 2025</div>
+            <table>
+                <tr>
+                    <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+                </tr>
+                <tr>
+                    <td class="weekend">30</td>
+                    <td>31</td>
+                    <td class="other-month">1</td>
+                    <td class="other-month">2</td>
+                    <td class="other-month">3</td>
+                    <td class="other-month">4</td>
+                    <td class="weekend other-month">5</td>
+                </tr>
+                <tr>
+                    <td class="weekend">6</td>
+                    <td>7</td><td>8</td><td>9</td><td>10</td><td>11</td>
+                    <td class="weekend">12</td>
+                </tr>
+                <tr>
+                    <td class="weekend">13</td>
+                    <td>14</td><td>15</td><td>16</td><td>17</td><td>18</td>
+                    <td class="weekend">19</td>
+                </tr>
+                <tr>
+                    <td class="weekend">20</td>
+                    <td>21</td><td>22</td><td>23</td><td>24</td><td>25</td>
+                    <td class="weekend">26</td>
+                </tr>
+                <tr>
+                    <td class="weekend">27</td>
+                    <td>28</td><td>29</td><td>30</td>
+                    <td class="other-month">1</td>
+                    <td class="other-month">2</td>
+                    <td class="weekend other-month">3</td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- May 2025 -->
+        <div class="month">
+            <div class="month-name">May 2025</div>
+            <table>
+                <tr>
+                    <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+                </tr>
+                <tr>
+                    <td class="weekend other-month">27</td>
+                    <td class="other-month">28</td>
+                    <td class="other-month">29</td>
+                    <td class="other-month">30</td>
+                    <td>1</td><td>2</td>
+                    <td class="weekend">3</td>
+                </tr>
+                <tr>
+                    <td class="weekend">4</td>
+                    <td>5</td><td>6</td><td>7</td><td>8</td><td>9</td>
+                    <td class="weekend">10</td>
+                </tr>
+                <tr>
+                    <td class="weekend">11</td>
+                    <td>12</td><td>13</td><td>14</td><td>15</td><td>16</td>
+                    <td class="weekend">17</td>
+                </tr>
+                <tr>
+                    <td class="weekend">18</td>
+                    <td>19</td><td>20</td><td>21</td><td>22</td><td>23</td>
+                    <td class="weekend">24</td>
+                </tr>
+                <tr>
+                    <td class="weekend">25</td>
+                    <td>26</td><td>27</td><td>28</td><td>29</td><td>30</td>
+                    <td class="weekend">31</td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- June 2025 -->
+        <div class="month">
+            <div class="month-name">June 2025</div>
+            <table>
+                <tr>
+                    <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+                </tr>
+                <tr>
+                    <td class="weekend">1</td>
+                    <td>2</td><td>3</td><td>4</td><td>5</td><td>6</td>
+                    <td class="weekend">7</td>
+                </tr>
+                <tr>
+                    <td class="weekend">8</td>
+                    <td>9</td><td>10</td><td>11</td><td>12</td><td>13</td>
+                    <td class="weekend">14</td>
+                </tr>
+                <tr>
+                    <td class="weekend">15</td>
+                    <td>16</td><td>17</td><td>18</td><td>19</td><td>20</td>
+                    <td class="weekend">21</td>
+                </tr>
+                <tr>
+                    <td class="weekend">22</td>
+                    <td>23</td><td>24</td><td>25</td><td>26</td><td>27</td>
+                    <td class="weekend">28</td>
+                </tr>
+                <tr>
+                    <td class="weekend">29</td>
+                    <td>30</td>
+                    <td class="other-month">1</td>
+                    <td class="other-month">2</td>
+                    <td class="other-month">3</td>
+                    <td class="other-month">4</td>
+                    <td class="weekend other-month">5</td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- July 2025 -->
+        <div class="month">
+            <div class="month-name">July 2025</div>
+            <table>
+                <tr>
+                    <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+                </tr>
+                <tr>
+                    <td class="weekend other-month">29</td>
+                    <td class="other-month">30</td>
+                    <td>1</td><td>2</td><td>3</td><td>4</td>
+                    <td class="weekend">5</td>
+                </tr>
+                <tr>
+                    <td class="weekend">6</td>
+                    <td>7</td><td>8</td><td>9</td><td>10</td><td>11</td>
+                    <td class="weekend">12</td>
+                </tr>
+                <tr>
+                    <td class="weekend">13</td>
+                    <td>14</td><td>15</td><td>16</td><td>17</td><td>18</td>
+                    <td class="weekend">19</td>
+                </tr>
+                <tr>
+                    <td class="weekend">20</td>
+                    <td>21</td><td>22</td><td>23</td><td>24</td><td>25</td>
+                    <td class="weekend">26</td>
+                </tr>
+                <tr>
+                    <td class="weekend">27</td>
+                    <td>28</td><td>29</td><td>30</td><td>31</td>
+                    <td class="other-month">1</td>
+                    <td class="weekend other-month">2</td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- August 2025 -->
+        <div class="month">
+            <div class="month-name">August 2025</div>
+            <table>
+                <tr>
+                    <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+                </tr>
+                <tr>
+                    <td class="weekend other-month">27</td>
+                    <td class="other-month">28</td>
+                    <td class="other-month">29</td>
+                    <td class="other-month">30</td>
+                    <td class="other-month">31</td>
+                    <td>1</td>
+                    <td class="weekend">2</td>
+                </tr>
+                <tr>
+                    <td class="weekend">3</td>
+                    <td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
+                    <td class="weekend">9</td>
+                </tr>
+                <tr>
+                    <td class="weekend">10</td>
+                    <td>11</td><td>12</td><td>13</td><td>14</td><td>15</td>
+                    <td class="weekend">16</td>
+                </tr>
+                <tr>
+                    <td class="weekend">17</td>
+                    <td>18</td><td>19</td><td>20</td><td>21</td><td>22</td>
+                    <td class="weekend">23</td>
+                </tr>
+                <tr>
+                    <td class="weekend">24</td>
+                    <td>25</td><td>26</td><td>27</td><td>28</td><td>29</td>
+                    <td class="weekend">30</td>
+                </tr>
+                <tr>
+                    <td class="weekend">31</td>
+                    <td class="other-month">1</td>
+                    <td class="other-month">2</td>
+                    <td class="other-month">3</td>
+                    <td class="other-month">4</td>
+                    <td class="other-month">5</td>
+                    <td class="weekend other-month">6</td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- September 2025 -->
+        <div class="month">
+            <div class="month-name">September 2025</div>
+            <table>
+                <tr>
+                    <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+                </tr>
+                <tr>
+                    <td class="weekend other-month">31</td>
+                    <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+                    <td class="weekend">6</td>
+                </tr>
+                <tr>
+                    <td class="weekend">7</td>
+                    <td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>
+                    <td class="weekend">13</td>
+                </tr>
+                <tr>
+                    <td class="weekend">14</td>
+                    <td>15</td><td>16</td><td>17</td><td>18</td><td>19</td>
+                    <td class="weekend">20</td>
+                </tr>
+                <tr>
+                    <td class="weekend">21</td>
+                    <td>22</td><td>23</td><td>24</td><td>25</td><td>26</td>
+                    <td class="weekend">27</td>
+                </tr>
+                <tr>
+                    <td class="weekend">28</td>
+                    <td>29</td><td>30</td>
+                    <td class="other-month">1</td>
+                    <td class="other-month">2</td>
+                    <td class="other-month">3</td>
+                    <td class="weekend other-month">4</td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- October 2025 -->
+        <div class="month">
+            <div class="month-name">October 2025</div>
+            <table>
+                <tr>
+                    <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+                </tr>
+                <tr>
+                    <td class="weekend other-month">28</td>
+                    <td class="other-month">29</td>
+                    <td class="other-month">30</td>
+                    <td>1</td><td>2</td><td>3</td>
+                    <td class="weekend">4</td>
+                </tr>
+                <tr>
+                    <td class="weekend">5</td>
+                    <td>6</td><td>7</td><td>8</td><td>9</td><td>10</td>
+                    <td class="weekend">11</td>
+                </tr>
+                <tr>
+                    <td class="weekend">12</td>
+                    <td>13</td><td>14</td><td>15</td><td>16</td><td>17</td>
+                    <td class="weekend">18</td>
+                </tr>
+                <tr>
+                    <td class="weekend">19</td>
+                    <td>20</td><td>21</td><td>22</td><td>23</td><td>24</td>
+                    <td class="weekend">25</td>
+                </tr>
+                <tr>
+                    <td class="weekend">26</td>
+                    <td>27</td><td>28</td><td>29</td><td>30</td><td>31</td>
+                    <td class="weekend">1</td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- November 2025 -->
+        <div class="month">
+            <div class="month-name">November 2025</div>
+            <table>
+                <tr>
+                    <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+                </tr>
+                <tr>
+                    <td class="weekend other-month">26</td>
+                    <td class="other-month">27</td>
+                    <td class="other-month">28</td>
+                    <td class="other-month">29</td>
+                    <td class="other-month">30</td>
+                    <td class="other-month">31</td>
+                    <td class="weekend">1</td>
+                </tr>
+                <tr>
+                    <td class="weekend">2</td>
+                    <td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+                    <td class="weekend">8</td>
+                </tr>
+                <tr>
+                    <td class="weekend">9</td>
+                    <td>10</td><td>11</td><td>12</td><td>13</td><td>14</td>
+                    <td class="weekend">15</td>
+                </tr>
+                <tr>
+                    <td class="weekend">16</td>
+                    <td>17</td><td>18</td><td>19</td><td>20</td><td>21</td>
+                    <td class="weekend">22</td>
+                </tr>
+                <tr>
+                    <td class="weekend">23</td>
+                    <td>24</td><td>25</td><td>26</td><td>27</td><td>28</td>
+                    <td class="weekend">29</td>
+                </tr>
+                <tr>
+                    <td class="weekend">30</td>
+                    <td class="other-month">1</td>
+                    <td class="other-month">2</td>
+                    <td class="other-month">3</td>
+                    <td class="other-month">4</td>
+                    <td class="other-month">5</td>
+                    <td class="weekend other-month">6</td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- December 2025 -->
+        <div class="month">
+            <div class="month-name">December 2025</div>
+            <table>
+                <tr>
+                    <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+                </tr>
+                <tr>
+                    <td class="weekend other-month">30</td>
+                    <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+                    <td class="weekend">6</td>
+                </tr>
+                <tr>
+                    <td class="weekend">7</td>
+                    <td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>
+                    <td class="weekend">13</td>
+                </tr>
+                <tr>
+                    <td class="weekend">14</td>
+                    <td>15</td><td>16</td><td>17</td><td>18</td><td>19</td>
+                    <td class="weekend">20</td>
+                </tr>
+                <tr>
+                    <td class="weekend">21</td>
+                    <td>22</td><td>23</td><td>24</td><td>25</td><td>26</td>
+                    <td class="weekend">27</td>
+                </tr>
+                <tr>
+                    <td class="weekend">28</td>
+                    <td>29</td><td>30</td><td>31</td>
+                    <td class="other-month">1</td>
+                    <td class="other-month">2</td>
+                    <td class="weekend other-month">3</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <script>
+        // Highlight today's date if it's 2025
+        document.addEventListener('DOMContentLoaded', function() {
+            const today = new Date();
+            if (today.getFullYear() === 2025) {
+                const month = today.getMonth() + 1; // JavaScript months are 0-indexed
+                const date = today.getDate();
+                
+                // Find the cell with today's date in the current month
+                const monthElement = document.querySelector(`.month:nth-child(${month})`);
+                if (monthElement) {
+                    const cells = monthElement.querySelectorAll('td');
+                    cells.forEach(cell => {
+                        if (parseInt(cell.textContent) === date && !cell.classList.contains('other-month')) {
+                            cell.classList.add('today');
+                        }
+                    });
+                }
+            }
+        });
+    </script>
+   
+    
+</body>
+</html>
